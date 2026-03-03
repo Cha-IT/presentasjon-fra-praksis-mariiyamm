@@ -7,8 +7,16 @@ import dføAnsatt from './assets/img/dfø1.jpg';
 import nuxt from './assets/img/nuxt.png';
 import vue from './assets/img/vue.png';
 import tailwind from './assets/img/tailwind.png';
+import dføP from './assets/img/dføP.jpg';
+import cat from './assets/img/cat.png';
+import kode from './assets/img/kode.png';
 import plan from './assets/img/planDFØ.png';
 import varIT from './assets/img/varIT.png';
+import kommune from './assets/img/kommune.jpg';
+import varNett from './assets/img/varNett.jpg';
+import varSer from './assets/img/varSer.jpg';
+import powerShell from './assets/img/powerShell.jpg'
+
 
 const customTheme = {
   colors: {
@@ -90,9 +98,6 @@ function App() {
               <Appear>
                 <ListItem>GidHub</ListItem>
               </Appear>
-              <Appear>
-                <a href="http://localhost:3000/">Cat side</a>
-              </Appear>
             </UnorderedList>
           </Box>
 
@@ -107,7 +112,21 @@ function App() {
         </FlexBox>
       </Slide>
 
-      {/* Slide 4: det som jeg lært*/}
+      
+      {/* Slide 4: PowerShell, Brukerstøtte*/}
+      <Slide>
+        <Heading>Min side</Heading>
+        <FlexBox justifyContent={'space-between'}>
+          <a href="http://localhost:3000/">
+            <Image src={cat} width="500"/>
+          </a>
+          <Image src={kode} width="800"/>
+        </FlexBox>
+      </Slide>
+
+        
+
+      {/* Slide 5: det som jeg lært*/}
       <Slide>
         <Heading>Mitt inntrykk </Heading>
         <FlexBox>
@@ -119,7 +138,10 @@ function App() {
               <Appear>
                 <ListItem>Ansatte</ListItem>
               </Appear>
-            </UnorderedList> 
+              <Appear>
+                <ListItem>løs PC</ListItem>
+              </Appear>
+            </UnorderedList>
           </Box>
 
           <UnorderedList>
@@ -133,7 +155,7 @@ function App() {
       </Slide>
 
 
-      {/* Slide 5: VarIT */}
+      {/* Slide 6: VarIT */}
       <Slide>
         <Heading>VarIT</Heading>
         <FlexBox>
@@ -147,34 +169,43 @@ function App() {
               </Appear>
             </UnorderedList>
           </Box>
-          <Image src={varIT} width="300"/>
+          <Image src={kommune} width="600"/>
         </FlexBox>
       </Slide>
 
-      {/* Slide 6: møter, internett*/}
+      {/* Slide 7: møter, internett*/}
       <Slide>
         <Heading>Møter, retninger </Heading>
-        <FlexBox >
-          <UnorderedList>
-            <Appear>
-              <ListItem>drift og utvikling</ListItem>
-            </Appear>
+        <FlexBox>
+          <FlexBox >
+            <UnorderedList>
+              <Appear>
+                <ListItem>drift og utvikling</ListItem>
+              </Appear>
 
-            <Appear>
-              <ListItem>brukerstøtte</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>nettverk</ListItem>
-            </Appear>
-            
-            <Appear>
-              <ListItem>utvikling</ListItem>
-            </Appear>
-          </UnorderedList>
+              <Appear>
+                <ListItem>brukerstøtte</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>nettverk</ListItem>
+              </Appear>
+              
+              <Appear>
+                <ListItem>utvikling</ListItem>
+              </Appear>
+            </UnorderedList>
+          </FlexBox>
+          <FlexBox flexDirection={'column'}>
+            <Image src={varNett} width="300"/>
+            <Image src={varSer} width="300"/>
+          </FlexBox>
+
+
         </FlexBox>
       </Slide>
 
-      {/* Slide 7: PowerShell, Brukerstøtte*/}
+
+      {/* Slide 8: PowerShell, Brukerstøtte*/}
       <Slide>
         <Heading>Oppgave for oss</Heading>
         <UnorderedList>
@@ -184,6 +215,7 @@ function App() {
           <Appear>
             <ListItem>Brukerstøtte</ListItem>
           </Appear>
+          <Image src={powerShell} width="700"/>
         </UnorderedList>
       </Slide>
 
