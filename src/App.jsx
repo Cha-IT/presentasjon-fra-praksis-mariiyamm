@@ -43,112 +43,135 @@ function App() {
       {/* Slide 2: DFØ */}
       <Slide>
         <Heading>Litt om DFØ?</Heading>
-        <Text>
-          Direktoratet for forvaltning og økonomistyring.
-        </Text>
-        <UnorderedList>
-          <Appear>
-            <ListItem>Stand up</ListItem>
-          </Appear>
-          
-          <Appear>
-            <ListItem>Lærling</ListItem>
-          </Appear>
-        </UnorderedList>
+        <FlexBox>
+          <Box>
+            <Text>
+              Direktoratet for forvaltning og økonomistyring.
+            </Text>
+            <UnorderedList>
+              <Appear>
+                <ListItem>Stand up</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>Lærling</ListItem>
+              </Appear>
+            </UnorderedList>
+          </Box>
+
+          <FlexBox flexDirection={'column'} justifyContent={'start'} alignItems={'start'}>
+            <Image src={dføHus} width="350px" />
+            <Image src={dføAnsatt} width="350px" />
+          </FlexBox>
+        </FlexBox>
         
-        <Image src={dføHus} width="100px" />
-        <Image src={dføAnsatt} width="100px" />
       </Slide>
 
       {/* Slide 3: min side*/}
       <Slide>
         <Heading>Oppgave</Heading>
-        <UnorderedList>
-          <Appear>
-            <ListItem>Nuxt</ListItem>
-          </Appear>
+        <FlexBox>
           
-          <Appear>
-            <ListItem>Vue</ListItem>
-          </Appear>
-          <Appear>
-            <ListItem>Tailwind</ListItem>
-          </Appear>
-          <Appear>
-            <ListItem>API</ListItem>
-          </Appear>
-          <Appear>
-            <ListItem>GidHub</ListItem>
-          </Appear>
-          <Appear>
-            <a href="http://localhost:3000/">Cat side</a>
-          </Appear>
-        </UnorderedList>
-        
-        
-        <Image src={nuxt} width="300"/>
-        <Image src={vue} width="300"/>
-        <Image src={tailwind} width="300"/>
+          <Box>
+
+            <UnorderedList>
+              <Appear>
+                <ListItem>Nuxt</ListItem>
+              </Appear>
+              
+              <Appear>
+                <ListItem>Vue</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>Tailwind</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>API</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>GidHub</ListItem>
+              </Appear>
+              <Appear>
+                <a href="http://localhost:3000/">Cat side</a>
+              </Appear>
+            </UnorderedList>
+          </Box>
+
+          
+          <FlexBox flexDirection={'column'}>
+
+            <Image src={nuxt} width="200"/>
+            <Image src={vue} width="200"/>
+            
+          </FlexBox>
+          <Image src={tailwind} width="200"/>
+        </FlexBox>
       </Slide>
 
       {/* Slide 4: det som jeg lært*/}
       <Slide>
         <Heading>Mitt inntrykk </Heading>
-        <UnorderedList>
-          <Appear>
-            <ListItem>Chat GPT</ListItem>
-          </Appear>
-          
-          <Appear>
-            <ListItem>ansatte</ListItem>
-          </Appear>
-          
-          <Appear>
-            {/* <ListItem> */}
-              <Image src={plan} width="700"/>
-            {/* </ListItem> */}
-          </Appear>
+        <FlexBox>
+          <Box>
+            <UnorderedList>
+              <Appear>
+                <ListItem>Chat GPT</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>Ansatte</ListItem>
+              </Appear>
+            </UnorderedList> 
+          </Box>
 
-        </UnorderedList> 
+          <UnorderedList>
+            <Appear>
+              {/* <ListItem> */}
+                <Image src={plan} width="700"/>
+              {/* </ListItem> */}
+            </Appear>
+          </UnorderedList> 
+        </FlexBox>
       </Slide>
 
 
       {/* Slide 5: VarIT */}
       <Slide>
         <Heading>VarIT</Heading>
-        <UnorderedList>
-          <Appear>
-            <ListItem>Stjørdal rådhus</ListItem>
-          </Appear>
-          
-          <Appear>
-            <ListItem>6 kommunene</ListItem>
-          </Appear>
-          <Appear>
-            <Image src={varIT} width="300"/>
-          </Appear>
-        </UnorderedList>
+        <FlexBox>
+          <Box>
+            <UnorderedList>
+              <Appear>
+                <ListItem>Stjørdal rådhus</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem>6 kommunene</ListItem>
+              </Appear>
+            </UnorderedList>
+          </Box>
+          <Image src={varIT} width="300"/>
+        </FlexBox>
       </Slide>
 
       {/* Slide 6: møter, internett*/}
       <Slide>
         <Heading>Møter, retninger </Heading>
-        <UnorderedList>
-          <Appear>
-            <ListItem>drift og utvikling</ListItem>
-          </Appear>
-          
-          <Appear>
-            <ListItem>brukerstøtte</ListItem>
-          </Appear>
-          <Appear>
-            <ListItem>nettverk</ListItem>
-          </Appear>
-          
-          <Appear>
-            <ListItem>utvikling</ListItem>
-          </Appear>
-        </UnorderedList>
+        <FlexBox >
+          <UnorderedList>
+            <Appear>
+              <ListItem>drift og utvikling</ListItem>
+            </Appear>
+
+            <Appear>
+              <ListItem>brukerstøtte</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>nettverk</ListItem>
+            </Appear>
+            
+            <Appear>
+              <ListItem>utvikling</ListItem>
+            </Appear>
+          </UnorderedList>
+        </FlexBox>
       </Slide>
 
       {/* Slide 7: PowerShell, Brukerstøtte*/}
