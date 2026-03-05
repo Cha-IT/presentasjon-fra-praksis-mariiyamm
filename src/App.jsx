@@ -20,10 +20,10 @@ import powerShell from './assets/img/powerShell.jpg'
 
 const customTheme = {
   colors: {
-    primary: '#03A9F4', // Hovedtekstfarge
-    secondary: '#E91E63', // Overskrifter
-    tertiary: '#ffffff', // Bakgrunnsfarge
-    quaternary: '#CECECE' // Sekundær tekstfarge
+    primary: '#23261d', // Hovedtekstfarge
+    secondary: '#54341f', // Overskrifter
+    tertiary: '#e1cebb', // Bakgrunnsfarge
+    quaternary: '#301e1e' // Sekundær tekstfarge
   },
   fonts: {
     header: '"Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -33,8 +33,7 @@ const customTheme = {
 
 function App() {
   return (
-    <Deck template={<DefaultTemplate />}>
-      
+    <Deck template={<DefaultTemplate />} theme={customTheme}>
       {/* Slide 1: Tittel */}
       <Slide>
         <FlexBox height="100%" flexDirection="column">
@@ -50,7 +49,7 @@ function App() {
 
       {/* Slide 2: DFØ */}
       <Slide>
-        <Heading>Litt om DFØ?</Heading>
+        <Heading>Litt om DFØ</Heading>
         <FlexBox>
           <Box>
             <Text>
@@ -96,7 +95,7 @@ function App() {
                 <ListItem>API</ListItem>
               </Appear>
               <Appear>
-                <ListItem>GidHub</ListItem>
+                <ListItem>GitHub</ListItem>
               </Appear>
             </UnorderedList>
           </Box>
@@ -113,14 +112,14 @@ function App() {
       </Slide>
 
       
-      {/* Slide 4: PowerShell, Brukerstøtte*/}
+      {/* Slide 4:*/}
       <Slide>
         <Heading>Min side</Heading>
         <FlexBox justifyContent={'space-between'}>
           <a href="http://localhost:3000/">
             <Image src={cat} width="500"/>
           </a>
-          <Image src={kode} width="800"/>
+          <Image src={kode} width="700"/>
         </FlexBox>
       </Slide>
 
@@ -133,13 +132,13 @@ function App() {
           <Box>
             <UnorderedList>
               <Appear>
-                <ListItem>Chat GPT</ListItem>
+                <ListItem>ChatGPT</ListItem>
               </Appear>
               <Appear>
                 <ListItem>Ansatte</ListItem>
               </Appear>
               <Appear>
-                <ListItem>løs PC</ListItem>
+                <ListItem>Sikring av data</ListItem>
               </Appear>
             </UnorderedList>
           </Box>
@@ -165,7 +164,7 @@ function App() {
                 <ListItem>Stjørdal rådhus</ListItem>
               </Appear>
               <Appear>
-                <ListItem>6 kommunene</ListItem>
+                <ListItem>6 kommuner</ListItem>
               </Appear>
             </UnorderedList>
           </Box>
@@ -175,12 +174,12 @@ function App() {
 
       {/* Slide 7: møter, internett*/}
       <Slide>
-        <Heading>Møter, retninger </Heading>
+        <Heading>Møter og avdelinger </Heading>
         <FlexBox>
           <FlexBox >
             <UnorderedList>
               <Appear>
-                <ListItem>drift og utvikling</ListItem>
+                <ListItem>drift</ListItem>
               </Appear>
 
               <Appear>
@@ -217,17 +216,6 @@ function App() {
           </Appear>
           <Image src={powerShell} width="700"/>
         </UnorderedList>
-      </Slide>
-
-      <Slide>
-        <Grid gridTemplateColumns="1fr 1fr" gridColumnGap={15}>
-          <Box backgroundColor="primary" padding={10}>
-            <Text>Venstre side</Text>
-          </Box>
-          <Box backgroundColor="secondary" padding={10}>
-            <Text>Høyre side</Text>
-          </Box>
-        </Grid>
       </Slide>
 
     </Deck>
